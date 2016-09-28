@@ -6,8 +6,7 @@ services:
       - "8080:8080"
       - "50000:50000"
     volumes:
-      - /home/docker/volumes/jenkins:/var/jenkins_home
-    container_name: mellmo-jenkins
+      - ${JENKINS_CONTAINER_VOLUME}:/var/jenkins_home
+    container_name: ${JENKINS_CONTAINER_NAME}
     environment:
-      - VIRTUAL_HOST=jenkins.localhos
-
+      - VIRTUAL_HOST=${JENKINS_CONTAINER_VIRTUALHOST}
