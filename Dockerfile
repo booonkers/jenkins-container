@@ -3,5 +3,6 @@ MAINTAINER Mohamed Mellouki
 
 EXPOSE 8080
 EXPOSE 50000
+EXPOSE 2375
 
-ENV VIRTUALÃ_HOST=jenkins.localhost
+ENV VIRTUAL_HOST=jenkins.localhost
